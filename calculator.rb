@@ -67,4 +67,12 @@ RSpec.describe Calculator do
       expect(result).to eq(25)
     end
   end
+
+  describe '#power' do
+    it 'will return the power of two numbers' do
+      calculator = Calculator.new
+      result = calculator.power(2,3)
+      expect(result).to eq(8)
+    end
+  end
 end
