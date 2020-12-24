@@ -51,4 +51,12 @@ RSpec.describe Calculator do
       expect(result).to eq(25)
     end
   end
+
+  describe '#divide' do
+    it 'should return the quotient' do
+      calculator = Calculator.new
+      result = calculator.divide(30,6)
+      expect(result).to eq(5)
+    end
+  end
 end
